@@ -8,7 +8,6 @@ WORKDIR /app
 # add app
 COPY ./ ./
 
-
 RUN npm install -g serve
 # start app
 CMD ["serve","-s","build"]
