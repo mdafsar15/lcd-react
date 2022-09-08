@@ -9,6 +9,6 @@ WORKDIR /app
 COPY ./ ./
 
 
-RUN npm install
+RUN npm install -g serve
 # start app
-CMD ["node", "app.js"]
+CMD ["serve","-s","build"]
